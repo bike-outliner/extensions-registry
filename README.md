@@ -52,7 +52,18 @@ my-extension.bkext.zip
 
 ### Publishing a new version
 
-1. Build and package your extension (see the [Sharing Extensions](https://github.com/jessegrosjean/bike-extension-kit#sharing-extensions) guide in the Bike Extension Kit for the full build/package/release workflow)
+The [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit) provides commands that automate the release and submission process:
+
+```sh
+npx bike-ext build
+npx bike-ext package
+npx bike-ext release my-extension   # creates a GitHub Release with the .bkext.zip
+npx bike-ext submit my-extension    # forks this repo and opens a PR automatically
+```
+
+If you prefer to submit manually:
+
+1. Build and package your extension (see the [Sharing Extensions](https://github.com/jessegrosjean/bike-extension-kit#sharing-extensions) guide)
 2. Create a GitHub Release on your repo and attach the `.bkext.zip`
 3. Update your entry in `extensions.json` with the new `version` and `download_url`
 4. Open a pull request
