@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": "word-explorer",
+    "version": "0.1.0",
+    "download_url": "https://github.com/bike-outliner/example-extensions/releases/download/word-explorer-v0.1.0/word-explorer.bkext.zip",
+    "min_api_version": "0.0.0",
+    "description": "Dictionary and thesaurus lookup for selected words in the inspector sidebar",
+    "author": "Jesse Grosjean",
+    "url": "https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/word-explorer.bkext"
+  }
+]
