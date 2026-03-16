@@ -1,10 +1,10 @@
 # Bike Extensions Registry
 
-This repository hosts the extension registry for [Bike](https://www.hogbaysoftware.com/bike/). Bike uses `extensions.json` to discover, install, and update extensions from Window > Extensions Explorer > Browse.
+This repository hosts the extension registry for [Bike](https://www.hogbaysoftware.com/bike/). Bike uses `extensions.json` to discover, install, and update extensions from Bike > Extensions Explorer > Browse.
 
 ## For Extension Users
 
-Extensions are installed automatically from within Bike. Open Window > Extensions Explorer, switch to the Browse tab, and click Install.
+Extensions are installed automatically from within Bike. Open Bike > Extensions Explorer, switch to the Browse tab, and click Install.
 
 ## For Extension Authors
 
