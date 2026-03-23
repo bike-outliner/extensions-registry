@@ -1,10 +1,10 @@
 # Bike Extensions Registry
 
-This repository hosts the extension registry for [Bike](https://www.hogbaysoftware.com/bike/). Bike uses `extensions.json` to discover, install, and update extensions from Settings > Extensions > Browse.
+This repository hosts the extension registry for [Bike](https://www.hogbaysoftware.com/bike/). Bike uses `extensions.json` to discover, install, and update extensions from Bike > Extensions Explorer > Browse.
 
 ## For Extension Users
 
-Extensions are installed automatically from within Bike. Open Settings > Extensions, switch to the Browse tab, and click Install.
+Extensions are installed automatically from within Bike. Open Bike > Extensions Explorer, switch to the Browse tab, and click Install.
 
 ## For Extension Authors
 
@@ -52,12 +52,16 @@ my-extension.bkext.zip
 
 ### Publishing a new version
 
-1. Build and package your extension (see the [Sharing Extensions](https://github.com/jessegrosjean/bike-extension-kit#sharing-extensions) guide in the Bike Extension Kit for the full build/package/release workflow)
-2. Create a GitHub Release on your repo and attach the `.bkext.zip`
-3. Update your entry in `extensions.json` with the new `version` and `download_url`
-4. Open a pull request
+The [Bike Extension Kit](https://github.com/bike-outliner/extension-kit) provides commands that automate the release and submission process:
+
+```sh
+npx bike-ext build
+npx bike-ext package
+npx bike-ext release my-extension   # creates a GitHub Release with the .bkext.zip
+npx bike-ext submit my-extension    # forks this repo and opens a PR automatically
+```
 
 ## Related
 
-- [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit) — tools and templates for building Bike extensions
+- [Bike Extension Kit](https://github.com/bike-outliner/extension-kit) — tools and templates for building Bike extensions
 - [Bike Guide: Using Extensions](https://bikeguide.hogbaysoftware.com/bike-2-preview/using-bike/using-extensions)
