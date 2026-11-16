@@ -17,6 +17,7 @@ To list your extension in the registry, add an entry to `extensions.json` and op
   "id": "my-extension",
   "version": "1.0.0",
   "download_url": "https://github.com/you/bike-my-extension/releases/download/v1.0.0/my-extension.bkext.zip",
+  "sha256": "<output of: shasum -a 256 my-extension.bkext.zip>",
   "min_api_version": "0.6.0",
   "description": "Short description of what the extension does",
   "author": "Your Name",
@@ -31,6 +32,7 @@ To list your extension in the registry, add an entry to `extensions.json` and op
 | `id` | Yes | Must match the `.bkext` folder name (e.g. `my-extension` for `my-extension.bkext`) |
 | `version` | Yes | Semver version of the latest release |
 | `download_url` | Yes | URL to a `.bkext.zip` file (typically a GitHub Release asset) |
+| `sha256` | Yes | SHA-256 of that `.bkext.zip`, in lowercase hex. Bike won't install a download that doesn't match, so re-uploading the asset needs a registry update |
 | `min_api_version` | No | Minimum Bike API version required (e.g. `"0.6.0"`) |
 | `description` | No | Short description shown in the Browse tab |
 | `author` | No | Author name |

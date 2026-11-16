@@ -5,7 +5,7 @@
   "type": "array",
   "items": {
     "type": "object",
-    "required": ["id", "version", "download_url"],
+    "required": ["id", "version", "download_url", "sha256"],
     "properties": {
       "id": {
         "type": "string",
@@ -22,6 +22,11 @@
         "description": "URL to the .bkext.zip file",
         "format": "uri",
         "pattern": "\\.bkext\\.zip$"
+      },
+      "sha256": {
+        "type": "string",
+        "description": "SHA-256 of the .bkext.zip at download_url (lowercase hex). Bike refuses to install a download that doesn't match",
+        "pattern": "^[0-9a-f]{64}$"
       },
       "min_api_version": {
         "type": "string",
