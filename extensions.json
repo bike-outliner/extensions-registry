@@ -18,5 +18,15 @@
     "description": "Vim-style modal keybindings for Bike outlines: hjkl, counts, dd/yy/p, visual mode",
     "author": "Adrià Torralba-Agell",
     "url": "https://github.com/0xAdriaTorralba/bike-vim-keybindings"
+  },
+  {
+    "id": "inherit-due-dates",
+    "version": "0.4.0",
+    "download_url": "https://github.com/archurhh/inherit-due-dates/releases/download/inherit-due-dates-v0.4.0/inherit-due-dates.bkext.zip",
+    "sha256": "39d232c0e41e65f556ec1d89c278d331908eec8cb57bbc5ddd7de2193e018a94",
+    "min_api_version": "0.72.0",
+    "description": "Tasks inherit their due date from the day row or parent task they're filed under",
+    "author": "Art Currim",
+    "url": "https://github.com/archurhh/inherit-due-dates"
   }
 ]
